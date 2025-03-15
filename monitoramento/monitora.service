@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitoramento de memoria
+After=network.target
+
+[Service]
+User=user
+ExecStart=/home/user/monitora-mem.sh
+Restart=always
