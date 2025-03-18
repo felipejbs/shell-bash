@@ -1,0 +1,7 @@
+[Unit]
+Description=Limpeza mensal do arquivo
+After=network.target
+
+[Service]
+User=user
+ExecStart=/bin/sh -c '> /home/user/mem.info'
